@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,400,700&display=swap');
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 162, 255);
+  background: url('../img/background-blur-gradient.png') 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.2rem, 1.2vw, 1.2rem);
+  line-height: 1.5em;
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 640px;
+  max-width: 90%;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+  line-height: 1em;
+  font-weight: 100;
+
+}
+
+.list-tasks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-tasks li {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+.list-tasks li span{
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+.create-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.new-task,
+.btn-add-task {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(16px, 1vw, 1.2rem);
+}
+
+.new-task {
+  width: 100%;
+  margin-right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.btn-add-task {
+  background: rgba(0, 162, 255, 0.8);
+  cursor: pointer;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}

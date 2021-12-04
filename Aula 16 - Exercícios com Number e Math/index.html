@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício com Numbers e Math</title>
+    <style>
+        body {
+            font-family: "Raleway", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            width: 60%;
+            margin: auto;
+            line-height: 2;
+        }
+
+        input {
+            display: block;
+            margin: auto;
+            border: solid 1px cadetblue;
+            color: #333;
+            padding: 10px;
+            font-family: "Raleway", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            width: 300px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            outline: none;
+        }
+
+        p {
+            margin: -10px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" onkeyup="numInfo()" id="numero" autocomplete="off" placeholder="Digite um número">
+    <h2>O número informado é <span id="numeroDigitado">0</span></h2>
+    <div id="texto"></div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

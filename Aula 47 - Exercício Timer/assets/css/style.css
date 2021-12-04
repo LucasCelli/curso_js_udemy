@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html, body{
+  min-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(70,0,150);
+  background: url('../img/background-blur-gradient.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+span.btn{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: rgba(0,0,0,0.1);
+  font-family: 'Material Icons';
+  font-size: 3em;
+  cursor:  pointer;
+  border-radius: 50%;
+  text-align: center;
+  margin: 20px;
+  transition: ease-in-out 0.1s;
+}
+span.btn:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+span.btn:active{
+  transform: scale(0.8);
+
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 640px;
+  margin: 50px auto;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+}
+.title{
+  font-size: 3em;
+  font-weight: 100;
+
+}
+.timer{
+  padding: 1em;
+  font-size: 6em;
+}
+.controles{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.pausado{
+  color: grey;
+}

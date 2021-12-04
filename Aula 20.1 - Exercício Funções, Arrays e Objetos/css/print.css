@@ -1,0 +1,5 @@
+* {background: transparent !important;color: #000 !important;text-shadow: none !important;filter: none !important;-ms-filter: none !important;}
+body {margin: 0;padding: 0;line-height: 1.4em;}
+nav,footer,video,audio,object,embed {display: none;}
+a,a:visited {text-decoration: underline;}
+@page {margin: 0.5cm;}
