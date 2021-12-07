@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700,900&display=swap');
+
+:root {
+  --primary-color: rgb(255, 255, 255);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F6F5F5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+}
+
+.container h1{
+  font-size: 2rem;
+  font-weight: 200;
+  color: #1687A7;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.display {
+  display: flex;
+  width: 100%;
+  text-align: end;
+  padding: 0.75em 1em;
+  background-color: #F6F5F5;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 200;
+  color: #1687A7;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0.25em;
+  grid-row-gap: 0.25em;
+  user-select: none;
+}
+
+.botao {
+  padding: 1em;
+  background-color: #F6F5F5;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5em;
+  transition: ease-in 0.1s;
+}
+
+.botao:nth-child(4n){
+  background-color: #e2ecf3;
+}
+
+.botao:hover {
+  background-color: #D3E0EA;
+}
